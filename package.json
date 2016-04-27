@@ -1,13 +1,12 @@
 {
   "name": "Super-Duper-Playground",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "super duper awesome for development and playtime",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --inline --hot"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["angular", "webpack", "ES6"],
+  "author": "Mickey J Malotte",
   "license": "ISC",
   "devDependencies": {
     "angular": "^1.5.5",
