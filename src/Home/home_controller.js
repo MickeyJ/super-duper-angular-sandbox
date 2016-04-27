@@ -4,5 +4,6 @@ export default class HomeController{
     const vm = this;
 
     vm.message = 'Hi.'
+    
   }
 }
