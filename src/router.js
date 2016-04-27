@@ -12,7 +12,14 @@ export default (
           template: require('./Home/home_page.html'),
           controllerAs: 'vm',
           controller: 'HomeController'
-        });
+        })
+        .state('info', {
+          url: '/info',
+          scope: {},
+          template: require('./Info/info_page.html'),
+          controllerAs: 'vm',
+          controller: 'InfoController'
+        })
       
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true)

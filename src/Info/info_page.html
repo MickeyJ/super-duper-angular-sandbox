@@ -1,0 +1,27 @@
+<main id="info-page" class="jumbotron">
+
+  <div class="form-inline">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="search by whatever"
+      ng-model="searchInput"
+    />
+  </div>
+
+  <table class="table table-hover">
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Occupation</th>
+      <th>Title</th>
+    </tr>
+    <tr class="" ng-repeat="p in vm.people | filter: searchInput">
+      <td>{{p.id}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.occupation}}</td>
+      <td>{{p.title}}</td>
+    </tr>
+  </table>
+
+</main>
