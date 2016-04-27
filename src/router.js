@@ -13,8 +13,7 @@ export default (
           controllerAs: 'vm',
           controller: 'HomeController'
         });
-
-
+      
       $urlRouterProvider.otherwise('/');
       $locationProvider.html5Mode(true)
     }
