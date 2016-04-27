@@ -4,7 +4,7 @@ export default class HomeController{
     require('./home.scss');
     const vm = this;
 
-    vm.message = 'Hi.'
+    vm.message = 'Hi.';
     
   }
 }

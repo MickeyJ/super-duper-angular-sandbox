@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "super duper awesome for development and playtime",
   "scripts": {
-    "start": "node_modules/.bin/webpack-dev-server --inline --hot"
+    "start": "NODE_ENV=development node_modules/.bin/webpack-dev-server --inline --hot"
   },
   "keywords": ["angular", "webpack", "ES6"],
   "author": "Mickey J Malotte",
