@@ -4,7 +4,14 @@
 __All you have to do is...__
 ```bash
   
-$ npm install && npm start
+$ npm install && npm run dev
   
 ```
 
+Test ng minification
+
+```bash
+  
+$ npm run stage
+  
+```
