@@ -1,0 +1,17 @@
+<main id="home-page">
+
+  <h2 ng-bind="home.title"></h2>
+
+  <input
+    type="text"
+    ng-model="home.newTitle"
+    placeholder="Change teh Title"
+  />
+
+  <button ng-click="home.changeTitle(home.newTitle)">
+    Change Name
+  </button>
+
+  <p ng-bind="home.message"></p>
+
+</main>

@@ -1,13 +1,16 @@
+const strip = require('strip-loader');
 const webpack = require('webpack');
 const ENV = process.env.NODE_ENV;
+const DEV = ENV==='development';
+const PROD = ENV==='production';
 
-module.exports = {
+const config = {
   entry: './src/app.js',
   output: {
     path: `${__dirname}/public/`,
     filename: 'bundle.js'
   },
-  devtool: 'source-map',
+  devtool: !PROD ? 'source-map' : null,
   devServer: {
     contentBase: 'public',
     historyApiFallback: {
@@ -46,3 +49,16 @@ module.exports = {
     })
   ]
 };
+
+if(!DEV){
+  config.module.loaders.push({
+    test: /\.js/,
+    exclude: /node_modules/,
+    loaders: [
+      'ng-annotate',
+      strip.loader('console.log')
+    ]
+  });
+}
+
+module.exports = config;
